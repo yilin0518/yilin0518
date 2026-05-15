@@ -5,4 +5,13 @@ I'm active in Rust Community, mainly in Zulip. My open talks are here:
 - [Provide the meaning of "Valid" to Understand.](https://rust-lang.zulipchat.com/#narrow/channel/425075-rust-for-linux/topic/Provide.20the.20.20meaning.20of.20.22Valid.22.20to.20Understand.2E/with/539809062)
 
 I have opened many issues in many Rust crate repositories:
-- 
+
+## Latest Issues
+<!-- ISSUE_LIST_START -->
+- _Updating..._
+<!-- ISSUE_LIST_END -->
+
+## Latest Pull Requests
+<!-- PR_LIST_START -->
+- _Updating..._
+<!-- PR_LIST_END -->
