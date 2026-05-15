@@ -49,10 +49,10 @@ def fetch_items(query: str, per_page: int, token: str) -> list[dict]:
     return data.get("items", [])
 
 
-def build_search_query(item_type: str, username: str, exclude_repo: str) -> str:
+def build_search_query(item_type: str, username: str, exclude_repo: str | None) -> str:
     parts = [f"is:{item_type}", f"author:{username}"]
     if exclude_repo:
-        parts.append(exclude_repo)
+        parts.append(f"-repo:{exclude_repo}")
     return " ".join(parts)
 
 
@@ -99,7 +99,7 @@ def main() -> None:
         raise SystemExit("MAX_ITEMS must be an integer.") from exc
     if per_page <= 0:
         raise SystemExit("MAX_ITEMS must be greater than zero.")
-    exclude_repo = f"-repo:{repository}" if repository else ""
+    exclude_repo = repository or None
 
     issue_query = build_search_query("issue", username, exclude_repo)
     pr_query = build_search_query("pr", username, exclude_repo)
