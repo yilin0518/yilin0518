@@ -2,6 +2,7 @@
 import json
 import os
 import sys
+import urllib.error
 import urllib.parse
 import urllib.request
 
@@ -20,10 +21,19 @@ def github_request(url: str, token: str) -> dict:
     if token:
         headers["Authorization"] = f"Bearer {token}"
     request = urllib.request.Request(url, headers=headers)
-    with urllib.request.urlopen(request) as response:
-        if response.status != 200:
-            raise RuntimeError(f"GitHub API request failed: {response.status}")
-        return json.loads(response.read().decode("utf-8"))
+    try:
+        with urllib.request.urlopen(request) as response:
+            body = response.read().decode("utf-8")
+            if response.status != 200:
+                raise RuntimeError(
+                    f"GitHub API request failed ({response.status}) for {url}: {body}"
+                )
+            return json.loads(body)
+    except urllib.error.HTTPError as exc:
+        body = exc.read().decode("utf-8")
+        raise RuntimeError(
+            f"GitHub API request failed ({exc.code}) for {url}: {body}"
+        ) from exc
 
 
 def build_query(query: str, per_page: int) -> str:
@@ -49,7 +59,12 @@ def format_items(items: list[dict], empty_message: str) -> list[str]:
     for item in items:
         title = item.get("title", "Untitled")
         url = item.get("html_url", "")
-        repo = item.get("repository_url", "").split("repos/")[-1] or "unknown"
+        repo_url = item.get("repository_url", "")
+        repo_path = urllib.parse.urlparse(repo_url).path
+        if repo_path.startswith("/repos/"):
+            repo = repo_path[len("/repos/") :]
+        else:
+            repo = repo_path.strip("/") or "unknown"
         state = item.get("state", "unknown")
         lines.append(f"- [{title}]({url}) ({repo}, {state})")
     return lines
@@ -66,7 +81,7 @@ def replace_block(lines: list[str], start_marker: str, end_marker: str, new_line
 def main() -> None:
     token = os.getenv("GITHUB_TOKEN")
     if not token:
-        raise SystemExit("GITHUB_TOKEN is required.")
+        raise SystemExit("GITHUB_TOKEN environment variable is required.")
 
     username = os.getenv("GITHUB_USERNAME") or os.getenv("GITHUB_REPOSITORY_OWNER")
     repository = os.getenv("GITHUB_REPOSITORY")
