@@ -24,10 +24,6 @@ def github_request(url: str, token: str) -> dict:
     try:
         with urllib.request.urlopen(request) as response:
             body = response.read().decode("utf-8")
-            if response.status != 200:
-                raise RuntimeError(
-                    f"GitHub API request failed ({response.status}) for {url}: {body}"
-                )
             return json.loads(body)
     except urllib.error.HTTPError as exc:
         body = exc.read().decode("utf-8")
@@ -88,7 +84,13 @@ def main() -> None:
     if not username:
         raise SystemExit("GITHUB_USERNAME or GITHUB_REPOSITORY_OWNER is required.")
 
-    per_page = int(os.getenv("MAX_ITEMS", "5"))
+    max_items_value = os.getenv("MAX_ITEMS", "5")
+    try:
+        per_page = int(max_items_value)
+    except ValueError as exc:
+        raise SystemExit("MAX_ITEMS must be an integer.") from exc
+    if per_page <= 0:
+        raise SystemExit("MAX_ITEMS must be greater than zero.")
     exclude_repo = f"-repo:{repository}" if repository else ""
 
     issue_query = f"is:issue author:{username} {exclude_repo}".strip()
