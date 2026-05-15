@@ -17,6 +17,7 @@ def github_request(url: str, token: str) -> dict:
     headers = {
         "Accept": "application/vnd.github+json",
         "User-Agent": "readme-auto-update",
+        "X-GitHub-Api-Version": "2022-11-28",
     }
     if token:
         headers["Authorization"] = f"Bearer {token}"
@@ -46,6 +47,13 @@ def fetch_items(query: str, per_page: int, token: str) -> list[dict]:
     url = build_query(query, per_page)
     data = github_request(url, token)
     return data.get("items", [])
+
+
+def build_search_query(item_type: str, username: str, exclude_repo: str) -> str:
+    parts = [f"is:{item_type}", f"author:{username}"]
+    if exclude_repo:
+        parts.append(exclude_repo)
+    return " ".join(parts)
 
 
 def format_items(items: list[dict], empty_message: str) -> list[str]:
@@ -93,8 +101,8 @@ def main() -> None:
         raise SystemExit("MAX_ITEMS must be greater than zero.")
     exclude_repo = f"-repo:{repository}" if repository else ""
 
-    issue_query = f"is:issue author:{username} {exclude_repo}".strip()
-    pr_query = f"is:pr author:{username} {exclude_repo}".strip()
+    issue_query = build_search_query("issue", username, exclude_repo)
+    pr_query = build_search_query("pr", username, exclude_repo)
 
     issues = fetch_items(issue_query, per_page, token)
     prs = fetch_items(pr_query, per_page, token)
