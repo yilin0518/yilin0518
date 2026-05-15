@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>yilin0518 — GitHub Profile</title>
+  <meta name="description" content="yilin0518's personal GitHub profile page — issues, pull requests, and bio." />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- ===== Header / Profile ===== -->
+  <header>
+    <div class="container">
+      <div class="profile">
+        <!-- Avatar is replaced by JS once profile loads -->
+        <div id="profile-avatar" class="profile-avatar-placeholder">👤</div>
+
+        <div class="profile-info">
+          <h1 id="profile-name">yilin0518</h1>
+          <p class="username">@yilin0518</p>
+          <p class="bio" id="profile-bio">GitHub 用户 · 开发者</p>
+          <div class="profile-links" id="profile-links">
+            <a href="https://github.com/yilin0518" target="_blank" rel="noopener">🐙 GitHub</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+
+    <!-- ===== About / Personal Description ===== -->
+    <section id="about">
+      <div class="section-header">
+        <h2><span class="icon">👤</span> 关于我 / About Me</h2>
+      </div>
+      <div class="about-content">
+        <p>
+          欢迎来到我的 GitHub 主页！我是 <strong>yilin0518</strong>，一名热爱开源与技术的开发者。
+          这里汇聚了我在 GitHub 上提出的 Issue 和 Pull Request，记录了我的探索与贡献。
+        </p>
+        <p>
+          Welcome to my GitHub profile page! I'm <strong>yilin0518</strong>, a developer passionate
+          about open-source and technology. This page showcases my GitHub activity — including issues
+          I've filed and pull requests I've submitted.
+        </p>
+
+        <!-- Dynamic stats filled by JS -->
+        <div class="stats-grid">
+          <div class="stat-card">
+            <span class="stat-value" id="stat-repos">—</span>
+            <div class="stat-label">Public Repos</div>
+          </div>
+          <div class="stat-card">
+            <span class="stat-value" id="stat-followers">—</span>
+            <div class="stat-label">Followers</div>
+          </div>
+          <div class="stat-card">
+            <span class="stat-value" id="stat-following">—</span>
+            <div class="stat-label">Following</div>
+          </div>
+          <div class="stat-card">
+            <span class="stat-value" id="issues-count">—</span>
+            <div class="stat-label">Issues Filed</div>
+          </div>
+          <div class="stat-card">
+            <span class="stat-value" id="prs-count">—</span>
+            <div class="stat-label">Pull Requests</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Issues ===== -->
+    <section id="issues">
+      <div class="section-header">
+        <h2><span class="icon">🐛</span> 我提出的 Issues / My Issues</h2>
+        <span class="badge" id="issues-badge">loading…</span>
+      </div>
+
+      <div class="filter-bar" id="issues-filters">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="open">Open</button>
+        <button class="filter-btn" data-filter="closed">Closed</button>
+      </div>
+
+      <ul class="item-list" id="issues-list">
+        <li class="state-placeholder">
+          <div class="spinner"></div>
+          <p>Loading issues…</p>
+        </li>
+      </ul>
+    </section>
+
+    <!-- ===== Pull Requests ===== -->
+    <section id="pull-requests">
+      <div class="section-header">
+        <h2><span class="icon">🔀</span> 我的 Pull Requests / My Pull Requests</h2>
+        <span class="badge" id="prs-badge">loading…</span>
+      </div>
+
+      <div class="filter-bar" id="prs-filters">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="open">Open</button>
+        <button class="filter-btn" data-filter="merged">Merged</button>
+        <button class="filter-btn" data-filter="closed">Closed</button>
+      </div>
+
+      <ul class="item-list" id="prs-list">
+        <li class="state-placeholder">
+          <div class="spinner"></div>
+          <p>Loading pull requests…</p>
+        </li>
+      </ul>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>Built with ❤️ using the <a href="https://docs.github.com/en/rest" target="_blank" rel="noopener">GitHub REST API</a> · © 2025 yilin0518</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
