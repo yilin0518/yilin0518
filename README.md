@@ -7,4 +7,13 @@ I'm active in Rust Community, mainly in Zulip. My open talks are here:
 ![Metrics](/github-metrics.svg)
 
 I have opened many issues in many Rust crate repositories:
-- 
+
+## Issues
+<!-- ISSUE-LIST:START -->
+- _手动运行 workflow 更新该列表。_
+<!-- ISSUE-LIST:END -->
+
+## Pull Requests
+<!-- PR-LIST:START -->
+- _手动运行 workflow 更新该列表。_
+<!-- PR-LIST:END -->
