@@ -1,100 +1,284 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang="en" data-theme="light">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>yilin0518 — Blog</title>
-  <meta name="description" content="yilin0518's personal blog page — posts, categories, and search." />
+  <title>Clover — Personal Blog</title>
+  <meta name="description" content="Clover's personal blog — Rust, Compilers, AI, and Open Source." />
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
 
-  <!-- ===== Header / Profile ===== -->
-  <header>
-    <div class="container">
-      <div class="profile">
-        <!-- Avatar is replaced by JS once profile loads -->
-        <div id="profile-avatar" class="profile-avatar-placeholder">👤</div>
+  <!-- ===== Navbar ===== -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-inner">
+      <a class="nav-brand" href="#blog">Clover</a>
 
-        <div class="profile-info">
-          <h1 id="profile-name">yilin0518</h1>
-          <p class="username">@yilin0518</p>
-          <p class="bio" id="profile-bio">GitHub 用户 · 开发者</p>
-          <div class="profile-links" id="profile-links">
-            <a href="https://github.com/yilin0518" target="_blank" rel="noopener">🐙 GitHub</a>
-          </div>
+      <button class="nav-hamburger" id="nav-hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+
+      <ul class="nav-links" id="nav-links">
+        <li><a class="nav-link" data-page="blog"          href="#blog">Blog</a></li>
+        <li><a class="nav-link" data-page="categories"    href="#categories">Categories</a></li>
+        <li><a class="nav-link" data-page="tags"          href="#tags">Tags</a></li>
+        <li><a class="nav-link" data-page="contributions" href="#contributions">Contributions</a></li>
+        <li><a class="nav-link" data-page="about"         href="#about">About</a></li>
+      </ul>
+
+      <div class="nav-actions">
+        <div class="nav-search-wrap">
+          <input class="nav-search" id="nav-search" type="search" placeholder="Search…" autocomplete="off" />
+          <div class="nav-search-results" id="nav-search-results"></div>
         </div>
+        <button class="theme-toggle" id="theme-toggle" aria-label="Toggle dark mode">
+          <span class="icon-sun">☀️</span>
+          <span class="icon-moon">🌙</span>
+        </button>
       </div>
     </div>
-  </header>
+  </nav>
 
-  <main class="container">
+  <!-- ===== Main Layout ===== -->
+  <div class="layout" id="layout">
 
-    <!-- ===== About / Personal Description ===== -->
-    <section id="about">
-      <div class="section-header">
-        <h2><span class="icon">👤</span> 关于我 / About Me</h2>
-      </div>
-      <div class="about-content">
-        <p>
-          欢迎来到我的个人博客！我是 <strong>yilin0518</strong>，一名热爱开源与技术的开发者。
-          这里记录我的学习笔记、项目复盘与技术分享，欢迎交流。
-        </p>
-        <p>
-          Welcome to my personal blog! I'm <strong>yilin0518</strong>, a developer passionate
-          about open-source and technology. This page collects my posts, categories, and notes.
-        </p>
+    <!-- ===== Sidebar ===== -->
+    <aside class="sidebar" id="sidebar">
+      <div class="profile-card">
+        <div id="sidebar-avatar" class="avatar-placeholder">C</div>
+        <h2 class="profile-name" id="sidebar-name">Clover</h2>
+        <p class="profile-handle">@yilin0518</p>
+        <p class="profile-bio" id="sidebar-bio">Postgraduate at Fudan University. Interested in Rust, Compilers, and AI.</p>
 
-        <!-- Dynamic stats filled by JS -->
-        <div class="stats-grid">
-          <div class="stat-card">
-            <span class="stat-value" id="stat-repos">—</span>
-            <div class="stat-label">Public Repos</div>
+        <div class="profile-links">
+          <a href="https://github.com/yilin0518" target="_blank" rel="noopener" class="profile-link">
+            <svg viewBox="0 0 16 16" width="16" height="16" fill="currentColor"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/></svg>
+            GitHub
+          </a>
+          <a href="https://rust-lang.zulipchat.com" target="_blank" rel="noopener" class="profile-link">
+            <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M19.59 6.69a4.83 4.83 0 01-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 01-2.88 2.5 2.89 2.89 0 01-2.89-2.89 2.89 2.89 0 012.89-2.89c.28 0 .54.04.79.1V9.01a6.33 6.33 0 00-.79-.05 6.34 6.34 0 00-6.34 6.34 6.34 6.34 0 006.34 6.34 6.34 6.34 0 006.33-6.34V8.69a8.27 8.27 0 004.84 1.55V6.79a4.85 4.85 0 01-1.07-.1z"/></svg>
+            Zulip
+          </a>
+        </div>
+
+        <div class="sidebar-stats" id="sidebar-stats">
+          <div class="stat-item">
+            <span class="stat-num" id="stat-repos">—</span>
+            <span class="stat-lbl">Repos</span>
           </div>
-          <div class="stat-card">
-            <span class="stat-value" id="stat-followers">—</span>
-            <div class="stat-label">Followers</div>
+          <div class="stat-item">
+            <span class="stat-num" id="stat-followers">—</span>
+            <span class="stat-lbl">Followers</span>
           </div>
-          <div class="stat-card">
-            <span class="stat-value" id="stat-following">—</span>
-            <div class="stat-label">Following</div>
+          <div class="stat-item">
+            <span class="stat-num" id="stat-prs">—</span>
+            <span class="stat-lbl">PRs</span>
           </div>
-          <div class="stat-card">
-            <span class="stat-value" id="stat-blogs">—</span>
-            <div class="stat-label">Blog Posts</div>
-          </div>
-          <div class="stat-card">
-            <span class="stat-value" id="stat-categories">—</span>
-            <div class="stat-label">Categories</div>
+          <div class="stat-item">
+            <span class="stat-num" id="stat-issues">—</span>
+            <span class="stat-lbl">Issues</span>
           </div>
         </div>
       </div>
-    </section>
 
-    <!-- ===== Blog ===== -->
-    <section id="blog">
-      <div class="section-header">
-        <h2><span class="icon">📝</span> 博客 / Blog</h2>
-        <span class="badge" id="blog-count">0</span>
+      <div class="sidebar-section">
+        <h3 class="sidebar-section-title">Tech Stack</h3>
+        <div class="tech-tags" id="tech-tags">
+          <span class="tech-tag rust">Rust</span>
+          <span class="tech-tag compiler">Compilers</span>
+          <span class="tech-tag ai">AI / LLM</span>
+          <span class="tech-tag os">OS / Kernel</span>
+          <span class="tech-tag safety">Memory Safety</span>
+          <span class="tech-tag miri">Miri</span>
+          <span class="tech-tag llvm">LLVM</span>
+          <span class="tech-tag git">Git</span>
+        </div>
       </div>
 
-      <div class="blog-controls">
-        <input class="blog-search" id="blog-search" type="search" placeholder="搜索博客标题或摘要…" />
-        <div class="filter-bar" id="category-filters"></div>
+      <div class="sidebar-section">
+        <h3 class="sidebar-section-title">Education</h3>
+        <div class="edu-item">
+          <span class="edu-school">Fudan University</span>
+          <span class="edu-degree">M.S. Computer Science</span>
+          <span class="edu-year">2024 – Present</span>
+        </div>
       </div>
+    </aside>
 
-      <ul class="blog-list" id="blog-list">
-        <li class="state-placeholder">
-          <div class="spinner"></div>
-          <p>Loading blogs…</p>
-        </li>
-      </ul>
-    </section>
+    <!-- ===== Main Content ===== -->
+    <main class="main-content" id="main-content">
 
-  </main>
+      <!-- Blog -->
+      <section id="page-blog" class="page">
+        <div class="page-header">
+          <h1 class="page-title">Blog</h1>
+          <span class="page-count" id="blog-count">0 posts</span>
+        </div>
+        <div class="filter-row">
+          <input class="filter-search" id="blog-search" type="search" placeholder="Search posts…" />
+          <div class="filter-pills" id="blog-category-filters"></div>
+        </div>
+        <div class="post-list" id="blog-list"></div>
+      </section>
 
-  <footer>
-    <p>Built with ❤️ · © 2025 yilin0518</p>
+      <!-- Categories -->
+      <section id="page-categories" class="page hidden">
+        <div class="page-header">
+          <h1 class="page-title">Categories</h1>
+        </div>
+        <div id="categories-content"></div>
+      </section>
+
+      <!-- Tags -->
+      <section id="page-tags" class="page hidden">
+        <div class="page-header">
+          <h1 class="page-title">Tags</h1>
+        </div>
+        <div class="tag-cloud" id="tag-cloud"></div>
+        <div id="tag-filtered-posts" class="post-list" style="margin-top:1.5rem"></div>
+      </section>
+
+      <!-- Contributions -->
+      <section id="page-contributions" class="page hidden">
+        <div class="page-header">
+          <h1 class="page-title">Contributions</h1>
+          <span class="page-count" id="contrib-count">0 items</span>
+        </div>
+        <div class="filter-row">
+          <input class="filter-search" id="contrib-search" type="search" placeholder="Search contributions…" />
+          <div class="filter-pills">
+            <button class="pill active" data-type="all">All</button>
+            <button class="pill" data-type="issue">Issues</button>
+            <button class="pill" data-type="pr">Pull Requests</button>
+          </div>
+          <div class="filter-pills" id="contrib-status-filters">
+            <button class="pill active" data-status="all">All Status</button>
+            <button class="pill" data-status="open">Open</button>
+            <button class="pill" data-status="closed">Closed</button>
+            <button class="pill" data-status="merged">Merged</button>
+          </div>
+        </div>
+        <div class="contrib-list" id="contrib-list"></div>
+      </section>
+
+      <!-- About -->
+      <section id="page-about" class="page hidden">
+        <div class="page-header">
+          <h1 class="page-title">About</h1>
+        </div>
+
+        <div class="about-card">
+          <h2 class="about-section-title">About Me</h2>
+          <p>Hi, I'm <strong>Clover</strong>, a postgraduate student at <strong>Fudan University</strong> with a focus on Rust programming and AI. I'm currently diving deep into the Rust compiler internals and contributing to the Rust ecosystem.</p>
+          <p>I'm active in the Rust community, primarily on <a href="https://rust-lang.zulipchat.com" target="_blank" rel="noopener">Zulip</a>, where I discuss memory safety, undefined behavior, and compiler design. My open-source work focuses on finding and fixing soundness issues in Rust crates using <strong>Miri</strong>.</p>
+          <p>I believe in the power of safe systems programming and am passionate about making Rust's safety guarantees stronger and more accessible.</p>
+        </div>
+
+        <div class="about-card">
+          <h2 class="about-section-title">Skills & Expertise</h2>
+          <div class="skills-grid">
+            <div class="skill-group">
+              <h3>Languages</h3>
+              <div class="skill-tags">
+                <span class="skill-tag">Rust</span>
+                <span class="skill-tag">C/C++</span>
+                <span class="skill-tag">Python</span>
+                <span class="skill-tag">LLVM IR</span>
+              </div>
+            </div>
+            <div class="skill-group">
+              <h3>Tools & Frameworks</h3>
+              <div class="skill-tags">
+                <span class="skill-tag">Miri</span>
+                <span class="skill-tag">rustc</span>
+                <span class="skill-tag">Cargo</span>
+                <span class="skill-tag">Git</span>
+                <span class="skill-tag">GitHub Actions</span>
+              </div>
+            </div>
+            <div class="skill-group">
+              <h3>Research Areas</h3>
+              <div class="skill-tags">
+                <span class="skill-tag">Memory Safety</span>
+                <span class="skill-tag">Undefined Behavior</span>
+                <span class="skill-tag">Compiler Design</span>
+                <span class="skill-tag">Program Analysis</span>
+                <span class="skill-tag">AI / LLM</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="about-card">
+          <h2 class="about-section-title">Timeline</h2>
+          <div class="timeline" id="timeline">
+            <div class="timeline-item">
+              <div class="timeline-dot"></div>
+              <div class="timeline-content">
+                <span class="timeline-date">2026</span>
+                <h3>Rust Compiler Contribution</h3>
+                <p>Opened PR <a href="https://github.com/rust-lang/rust/pull/155201" target="_blank" rel="noopener">#155201</a> to rustc — prototype implementing RFC 3842 with <code>safety::requires</code> attribute for rustdoc.</p>
+              </div>
+            </div>
+            <div class="timeline-item">
+              <div class="timeline-dot"></div>
+              <div class="timeline-content">
+                <span class="timeline-date">2025 – 2026</span>
+                <h3>Soundness Research with Miri</h3>
+                <p>Systematically found and reported undefined behavior in 30+ Rust crates including tokio, apache/arrow-rs, tree-sitter, and icu4x using Miri.</p>
+              </div>
+            </div>
+            <div class="timeline-item">
+              <div class="timeline-dot"></div>
+              <div class="timeline-content">
+                <span class="timeline-date">2025</span>
+                <h3>Safety Tags Contributions</h3>
+                <p>Multiple merged PRs to <a href="https://github.com/safer-rust/safety-tags" target="_blank" rel="noopener">safer-rust/safety-tags</a> — adding Rust-for-Linux safety properties and documentation.</p>
+              </div>
+            </div>
+            <div class="timeline-item">
+              <div class="timeline-dot"></div>
+              <div class="timeline-content">
+                <span class="timeline-date">2024</span>
+                <h3>M.S. at Fudan University</h3>
+                <p>Started postgraduate studies in Computer Science at Fudan University, focusing on Rust compiler internals and program analysis.</p>
+              </div>
+            </div>
+            <div class="timeline-item">
+              <div class="timeline-dot"></div>
+              <div class="timeline-content">
+                <span class="timeline-date">2024</span>
+                <h3>RAP Contributions</h3>
+                <p>Multiple merged PRs to <a href="https://github.com/WIZeaz/RAP" target="_blank" rel="noopener">WIZeaz/RAP</a> — Rust Analysis Platform, improving re-exported path generation and API dependency graphs.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="about-card">
+          <h2 class="about-section-title">Open Talks & Discussions</h2>
+          <ul class="talks-list">
+            <li>
+              <a href="https://rust-lang.zulipchat.com/#narrow/channel/136281-t-opsem/topic/Different.20output.20when.20testing.20std.3A.3Aptr.3A.3Acopy.20by.20miri/with/595183915" target="_blank" rel="noopener">
+                Different output when testing std::ptr::copy by Miri
+              </a>
+              <span class="talk-channel">#t-opsem</span>
+            </li>
+            <li>
+              <a href="https://rust-lang.zulipchat.com/#narrow/channel/425075-rust-for-linux/topic/Provide.20the.20.20meaning.20of.20.22Valid.22.20to.20Understand.2E/with/539809062" target="_blank" rel="noopener">
+                Provide the meaning of "Valid" to Understand
+              </a>
+              <span class="talk-channel">#rust-for-linux</span>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+    </main>
+  </div>
+
+  <footer class="footer">
+    <p>Built with ❤️ · © 2025 Clover · <a href="https://github.com/yilin0518" target="_blank" rel="noopener">@yilin0518</a></p>
   </footer>
 
   <script src="script.js"></script>
