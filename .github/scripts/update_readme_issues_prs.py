@@ -72,9 +72,26 @@ def build_list(items: list[dict], status_fn) -> str:
     for item in items:
         title = item.get("title", "Untitled")
         url = item.get("html_url", "")
-        created_at = format_date(item.get("created_at"))
+        created_at_raw = item.get("created_at")
+        created_at = format_date(created_at_raw) if created_at_raw else "unknown"
         status = status_fn(item)
-        lines.append(f"- [{title}]({url}) — {created_at} — 状态: {status}")
+        # try to determine the repository full name (owner/repo)
+        repo_full = None
+        repo_url = item.get("repository_url")
+        if repo_url:
+            parts = urllib.parse.urlparse(repo_url).path.split("/")
+            if len(parts) >= 3:
+                repo_full = f"{parts[-2]}/{parts[-1]}"
+        if not repo_full:
+            # fallback to html_url parsing: /owner/repo/...
+            html_url = item.get("html_url", "")
+            parts = urllib.parse.urlparse(html_url).path.split("/")
+            if len(parts) >= 3:
+                repo_full = f"{parts[1]}/{parts[2]}"
+        if not repo_full:
+            repo_full = "unknown/unknown"
+
+        lines.append(f"- **{repo_full}**: [{title}]({url}) — {created_at} — state: {status}")
     return "\n".join(lines)
 
 
