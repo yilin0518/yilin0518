@@ -3,6 +3,9 @@ I'm Clover, a postgraduate from Fudan University, interested in Rust Programming
 I'm active in Rust Community, mainly in Zulip. My open talks are here: 
 - [Different output when testing std::ptr::copy by miri](https://rust-lang.zulipchat.com/#narrow/channel/136281-t-opsem/topic/Different.20output.20when.20testing.20std.3A.3Aptr.3A.3Acopy.20by.20miri/with/595183915)
 - [Provide the meaning of "Valid" to Understand.](https://rust-lang.zulipchat.com/#narrow/channel/425075-rust-for-linux/topic/Provide.20the.20.20meaning.20of.20.22Valid.22.20to.20Understand.2E/with/539809062)
+- [How CStr::from_bytes_with_nul_unchecked  deal with nul?](https://rust-lang.zulipchat.com/#narrow/channel/219381-t-libs/topic/How.20CStr.3A.3Afrom_bytes_with_nul_unchecked.20.20deal.20with.20nul.3F/with/532919235)
+- [Review about the safety comment related to List::remove](https://rust-lang.zulipchat.com/#narrow/channel/425075-rust-for-linux/topic/Review.20about.20the.20safety.20comment.20related.20to.20List.3A.3Aremove/with/568259521  )
+
 
 ![Metrics](/github-metrics.svg)
 
