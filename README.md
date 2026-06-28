@@ -48,4 +48,5 @@ I have opened some issues and PRs in many Rust crate repositories:
 - **alloy-rs/nybbles**: [change debug_assert!() to assert!() in Nibbles::len()](https://github.com/alloy-rs/nybbles/pull/57) — 2026-05-26 — state: Closed
 - **rust-lang/rust**: [Fix incorrect unsafe debug assertion in unchecked_div_exact](https://github.com/rust-lang/rust/pull/158314) — 2026-06-24 — state: Merged
 - **rust-lang/rust**: [Add safety section for SliceIndex::get_unchecked(mut)](https://github.com/rust-lang/rust/pull/158382) — 2026-06-27 — state: Merged
+- **rust-lang/rust**: [Fix inconsistent safety requirement in VecDeque::nonoverlapping_ranges](https://github.com/rust-lang/rust/pull/158433) — 2026-06-26 — state: Merged
 <!-- PR-LIST:END -->
