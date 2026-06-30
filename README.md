@@ -46,6 +46,7 @@ I have opened some issues and PRs in many Rust crate repositories:
 - **rust-lang/rust**: [rustdoc: Prototype implement RFC 3842 with safety::requires attribute](https://github.com/rust-lang/rust/pull/155201) — 2026-04-12 — state: Open
 - **DragonOS-Community/DragonOS**: [Add assert in ring_buffer.rs](https://github.com/DragonOS-Community/DragonOS/pull/1537) — 2025-12-22 — state: Closed
 - **alloy-rs/nybbles**: [change debug_assert!() to assert!() in Nibbles::len()](https://github.com/alloy-rs/nybbles/pull/57) — 2026-05-26 — state: Closed
+- **anza-xyz/solana-sdk**: [stable-layout: change fields visibility of StableVec<T> from public to private](https://github.com/anza-xyz/solana-sdk/pull/740) — 2026-05-26 — state: Merged
 - **rust-lang/rust**: [Fix incorrect unsafe debug assertion in unchecked_div_exact](https://github.com/rust-lang/rust/pull/158314) — 2026-06-24 — state: Merged
 - **rust-lang/rust**: [Add safety section for SliceIndex::get_unchecked(mut)](https://github.com/rust-lang/rust/pull/158382) — 2026-06-27 — state: Merged
 - **rust-lang/rust**: [Add safety section for DisjointBitor::disjoint_bitor](https://github.com/rust-lang/rust/pull/158383) — 2026-06-25 — state: Closed
