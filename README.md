@@ -13,7 +13,7 @@ I have opened some issues and PRs in many Rust crate repositories:
 
 ## Issues
 <!-- ISSUE-LIST:START -->
-- **awxkee/pxfm**: [UB found by Miri](https://github.com/awxkee/pxfm/issues/91) — 2026-07-03 — state: Open
+- **awxkee/pxfm**: [UB found by Miri](https://github.com/awxkee/pxfm/issues/91) — 2026-07-03 — state: Closed
 - **bluealloy/revm**: [UB found by miri](https://github.com/bluealloy/revm/issues/3776) — 2026-06-24 — state: Open
 - **mitsuhiko/elementtree-rust**: [Undefined Behaviour find by Miri](https://github.com/mitsuhiko/elementtree-rust/issues/23) — 2026-06-24 — state: Open
 - **dcuddeback/ioctl-rs**: [UB found by miri: Uninitialized memory](https://github.com/dcuddeback/ioctl-rs/issues/9) — 2026-06-24 — state: Open
