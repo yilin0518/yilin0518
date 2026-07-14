@@ -5,6 +5,7 @@ I'm active in Rust Community, mainly in Zulip. My open talks are here:
 - [Provide the meaning of "Valid" to Understand.](https://rust-lang.zulipchat.com/#narrow/channel/425075-rust-for-linux/topic/Provide.20the.20.20meaning.20of.20.22Valid.22.20to.20Understand.2E/with/539809062)
 - [How CStr::from_bytes_with_nul_unchecked  deal with nul?](https://rust-lang.zulipchat.com/#narrow/channel/219381-t-libs/topic/How.20CStr.3A.3Afrom_bytes_with_nul_unchecked.20.20deal.20with.20nul.3F/with/532919235)
 - [Review about the safety comment related to List::remove](https://rust-lang.zulipchat.com/#narrow/channel/425075-rust-for-linux/topic/Review.20about.20the.20safety.20comment.20related.20to.20List.3A.3Aremove/with/568259521  )
+- [Maybe some safety doc need fixs in intrinsics::simd](https://rust-lang.zulipchat.com/#narrow/channel/131828-t-compiler/topic/Maybe.20some.20safety.20doc.20need.20fixs.20in.20intrinsics.3A.3Asimd)
 
 
 ![Metrics](/github-metrics.svg)
@@ -55,6 +56,11 @@ I have opened some issues and PRs in many Rust crate repositories:
 
 ## Pull Requests
 <!-- PR-LIST:START -->
+- **rust-for-linux**: [rust: configfs: fix release safety documentation](https://lore.kernel.org/all/tencent_9FAFC60382D724C608F0F6BFABFC63BB6707@qq.com/) — 2026-07-08 — state: Open
+- **rust-for-linux**: [rust: miscdevice: fix write_iter safety docs](https://lore.kernel.org/all/tencent_8CD671E0F35223030143524D045F3BCAD506@qq.com/) — 2026-07-07 — state: Open
+- **rust-for-linux**: [rust: io: fix Mmio::from_raw safety docs](https://lore.kernel.org/all/tencent_2E90E794C61B02A9A4BB88BD76B02B976307@qq.com/) — 2026-07-07 — state: Open
+- **rust-for-linux**: [rust: drm: fix GEM object pointer safety docs](https://lore.kernel.org/all/alUFzVNxNHlmZbMJ@google.com/) — 2026-07-07 — state: Merged
+- **rust-lang/rust**: [Clarify as_uninit_mut may point to uninitialized memory](https://github.com/rust-lang/rust/pull/158804) — 2026-07-05 — state: Merged
 - **rust-lang/stdarch**: [Add align requirement in _mm_stream_si32 and _mm_stream_si64](https://github.com/rust-lang/stdarch/pull/2183) — 2026-07-07 — state: Merged 
 - **rust-lang/rust**: [Add supplementary information for get_unchecked(mut)](https://github.com/rust-lang/rust/pull/158810) — 2026-07-05 — state: Merged
 - **rust-lang/rust**: [Fix inconsistent safety requirement in VecDeque::nonoverlapping_ranges](https://github.com/rust-lang/rust/pull/158433) — 2026-06-26 — state: Merged
