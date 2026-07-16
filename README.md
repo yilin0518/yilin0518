@@ -56,6 +56,8 @@ I have opened some issues and PRs in many Rust crate repositories:
 
 ## Pull Requests
 <!-- PR-LIST:START -->
+- **rust-lang/rust**: [Clarify safety requirements for SIMD shl/shr and masked load/store](https://github.com/rust-lang/rust/pull/159402) — 2026-07-17 — state: Open
+- **rust-lang/rust**: [Fix safety doc in intrinsics::simd](https://github.com/rust-lang/rust/pull/159322) — 2026-07-16 — state: Merged
 - **rust-for-linux**: [rust: configfs: fix release safety documentation](https://lore.kernel.org/all/tencent_9FAFC60382D724C608F0F6BFABFC63BB6707@qq.com/) — 2026-07-08 — state: Open
 - **rust-for-linux**: [rust: miscdevice: fix write_iter safety docs](https://lore.kernel.org/all/tencent_8CD671E0F35223030143524D045F3BCAD506@qq.com/) — 2026-07-07 — state: Open
 - **rust-for-linux**: [rust: io: fix Mmio::from_raw safety docs](https://lore.kernel.org/all/tencent_2E90E794C61B02A9A4BB88BD76B02B976307@qq.com/) — 2026-07-07 — state: Open
