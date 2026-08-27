@@ -1,6 +1,7 @@
 I'm Clover, a postgraduate from Fudan University, interested in Rust Programming and AI. Now I'm learning the rust compiler.
 
 I'm active in Rust Community, mainly in Zulip. My open talks are here: 
+- [Why are core::wtf8 and alloc::wtf8 public but doc(hidden)](https://rust-lang.zulipchat.com/#narrow/channel/219381-t-libs/topic/.E2.9C.94.20Why.20are.20core.3A.3Awtf8.20and.20alloc.3A.3Awtf8.20public.20but.20doc.28hidden.29)
 - [Different output when testing std::ptr::copy by miri](https://rust-lang.zulipchat.com/#narrow/channel/136281-t-opsem/topic/Different.20output.20when.20testing.20std.3A.3Aptr.3A.3Acopy.20by.20miri/with/595183915)
 - [Provide the meaning of "Valid" to Understand.](https://rust-lang.zulipchat.com/#narrow/channel/425075-rust-for-linux/topic/Provide.20the.20.20meaning.20of.20.22Valid.22.20to.20Understand.2E/with/539809062)
 - [How CStr::from_bytes_with_nul_unchecked  deal with nul?](https://rust-lang.zulipchat.com/#narrow/channel/219381-t-libs/topic/How.20CStr.3A.3Afrom_bytes_with_nul_unchecked.20.20deal.20with.20nul.3F/with/532919235)
@@ -55,13 +56,6 @@ I have opened some issues and PRs in many Rust crate repositories:
 - **actix/actix-net**: [Potential DeadLock Reported by Miri](https://github.com/actix/actix-net/issues/746) — 2025-10-10 — state: Closed
 - **bodil/bitmaps**: [Potential Undefined Behavior Reported by Miri](https://github.com/bodil/bitmaps/issues/33) — 2025-10-09 — state: Open
 - **avitex/rust-aliasable**: [Potential Undefined Behavior Reported by Miri](https://github.com/avitex/rust-aliasable/issues/9) — 2025-10-08 — state: Open
-- **hxuhack/compiler_project**: [debug可执行文件时出现段错误](https://github.com/hxuhack/compiler_project/issues/29) — 2024-06-08 — state: Open
-- **hxuhack/compiler_project**: [关于spill部分的实现](https://github.com/hxuhack/compiler_project/issues/27) — 2024-06-07 — state: Closed
-- **hxuhack/compiler_project**: [lab5关于配置环境问题](https://github.com/hxuhack/compiler_project/issues/26) — 2024-06-06 — state: Closed
-- **hxuhack/compiler_project**: [生成ll文件但是链接错误](https://github.com/hxuhack/compiler_project/issues/24) — 2024-05-16 — state: Open
-- **hxuhack/compiler_project**: [活跃分析中的succ](https://github.com/hxuhack/compiler_project/issues/23) — 2024-05-14 — state: Open
-- **hxuhack/compiler_project**: [关于mem2reg的设计思路的猜测](https://github.com/hxuhack/compiler_project/issues/22) — 2024-05-14 — state: Open
-- **hxuhack/compiler_project**: [解析器构造成功但是无法解析文件](https://github.com/hxuhack/compiler_project/issues/6) — 2024-03-14 — state: Closed
 <!-- ISSUE-LIST:END -->
 
 ## Pull Requests
@@ -95,52 +89,8 @@ I have opened some issues and PRs in many Rust crate repositories:
 - **anza-xyz/solana-sdk**: [stable-layout: change fields visibility of StableVec<T> from public to private](https://github.com/anza-xyz/solana-sdk/pull/740) — 2026-05-26 — state: Merged
 - **libpnet/libpnet**: [pnet_sys: change visibility of FileDesc.fd from public to private](https://github.com/libpnet/libpnet/pull/768) — 2026-05-26 — state: Open
 - **alloy-rs/nybbles**: [change debug_assert!() to assert!() in Nibbles::len()](https://github.com/alloy-rs/nybbles/pull/57) — 2026-05-26 — state: Closed
-- **yilin0518/yilin0518**: [Add manual README issue/PR updater and blog-style homepage](https://github.com/yilin0518/yilin0518/pull/2) — 2026-05-16 — state: Merged
-- **yilin0518/yilin0518**: [[WIP] Add features to personal GitHub website](https://github.com/yilin0518/yilin0518/pull/1) — 2026-05-15 — state: Merged
 - **rust-lang/rust**: [rustdoc: Prototype implement RFC 3842 with safety::requires attribute](https://github.com/rust-lang/rust/pull/155201) — 2026-04-12 — state: Open
-- **safer-rust/rust**: [Support "{Tag}={description}" format, with customized Tag and description](https://github.com/safer-rust/rust/pull/8) — 2026-04-08 — state: Closed
-- **safer-rust/rust**: [Injecting safety documentation based on "#[safety::requires()]" attribute and the provided safety spec.](https://github.com/safer-rust/rust/pull/7) — 2026-04-05 — state: Merged
-- **safer-rust/rust**: [Expand safety documentation with TOML specification](https://github.com/safer-rust/rust/pull/6) — 2026-04-02 — state: Merged
-- **safer-rust/rust**: [Expand safety documentation placeholders using a TOML specification file](https://github.com/safer-rust/rust/pull/5) — 2026-04-02 — state: Merged
-- **safer-rust/std-unsafe-doc**: [Add functions to normalize JSON IDs and map re-export paths](https://github.com/safer-rust/std-unsafe-doc/pull/18) — 2026-04-01 — state: Merged
-- **safer-rust/rust**: [Expand safety documentation with TOML specification](https://github.com/safer-rust/rust/pull/4) — 2026-04-01 — state: Merged
-- **safer-rust/rust**: [Add safety-tool component with POC for safety tags](https://github.com/safer-rust/rust/pull/3) — 2026-03-24 — state: Merged
-- **safer-rust/rust**: [Add safety-tool component with POC for safety tags](https://github.com/safer-rust/rust/pull/2) — 2026-03-24 — state: Closed
-- **safer-rust/rust**: [Add safety-tool as  a new component of rust tools](https://github.com/safer-rust/rust/pull/1) — 2026-03-23 — state: Closed
-- **safer-rust/linux-unsafe-doc**: [Add unsafe API collector and update GitHub Pages workflow](https://github.com/safer-rust/linux-unsafe-doc/pull/1) — 2026-03-04 — state: Merged
-- **yilin0518/linux-unsafe-doc**: [[WIP] Fix GitHub Action error in Jekyll build phase](https://github.com/yilin0518/linux-unsafe-doc/pull/3) — 2026-03-04 — state: Merged
-- **yilin0518/linux-unsafe-doc**: [Update Pages workflow to regenerate rust-for-linux unsafe docs from latest upstream commit](https://github.com/yilin0518/linux-unsafe-doc/pull/2) — 2026-03-04 — state: Merged
-- **yilin0518/linux-unsafe-doc**: [Add GitHub Actions workflow to deploy GitHub Pages from rust-for-linux/](https://github.com/yilin0518/linux-unsafe-doc/pull/1) — 2026-03-04 — state: Merged
-- **safer-rust/std-unsafe-doc**: [Enhance rustdoc URL generation and include rustc version in output](https://github.com/safer-rust/std-unsafe-doc/pull/17) — 2026-03-04 — state: Merged
-- **safer-rust/RAPx**: [Fix(default alias-analysis): rework SCC path enumeration, SwitchInt constraints, and caching](https://github.com/safer-rust/RAPx/pull/228) — 2026-02-03 — state: Merged
 - **DragonOS-Community/DragonOS**: [Add assert in ring_buffer.rs](https://github.com/DragonOS-Community/DragonOS/pull/1537) — 2025-12-22 — state: Closed
-- **Artisan-Lab/tag-rust-for-linux**: [Modify the safety description about "valid pointer"](https://github.com/Artisan-Lab/tag-rust-for-linux/pull/4) — 2025-12-04 — state: Closed
-- **Artisan-Lab/tag-rust-for-linux**: [Consistent with current Rust-for-linux repo, add SPs in kernel](https://github.com/Artisan-Lab/tag-rust-for-linux/pull/3) — 2025-12-03 — state: Merged
-- **safer-rust/safety-tags**: [Adjust definition of some Rust-for-linux SP](https://github.com/safer-rust/safety-tags/pull/77) — 2025-12-02 — state: Merged
-- **safer-rust/safety-tags**: [Add complete Rust-for-linux markdown and toml file ](https://github.com/safer-rust/safety-tags/pull/73) — 2025-11-25 — state: Merged
-- **safer-rust/safety-tags**: [Add basic Rust-for-linux safety properties, not completed](https://github.com/safer-rust/safety-tags/pull/71) — 2025-11-17 — state: Merged
-- **WIZeaz/RAP**: [Add re-exported path for type](https://github.com/WIZeaz/RAP/pull/14) — 2025-09-28 — state: Merged
-- **WIZeaz/RAP**: [re-factor code, fix error in outputing re-exported path, now can outp…](https://github.com/WIZeaz/RAP/pull/13) — 2025-09-27 — state: Merged
-- **WIZeaz/RAP**: [For trait impl, generate type::trait_method format](https://github.com/WIZeaz/RAP/pull/12) — 2025-09-26 — state: Merged
-- **WIZeaz/RAP**: [Update visible.path.rs，generate re-exported path both for APIs and methods](https://github.com/WIZeaz/RAP/pull/11) — 2025-09-24 — state: Merged
-- **WIZeaz/RAP**: [Fix error in re-exported function, add ultimate path in output](https://github.com/WIZeaz/RAP/pull/10) — 2025-09-22 — state: Closed
-- **WIZeaz/RAP**: [Generate re-exported path, given def_id and args](https://github.com/WIZeaz/RAP/pull/9) — 2025-09-22 — state: Merged
-- **LearningOS/rustling-classroom-2025a-rustling-rustling-25A-template**: [Update](https://github.com/LearningOS/rustling-classroom-2025a-rustling-rustling-25A-template/pull/4) — 2025-09-21 — state: Open
-- **LearningOS/rustling-classroom-2025s-rustling-25S-template**: [finish all tests](https://github.com/LearningOS/rustling-classroom-2025s-rustling-25S-template/pull/11) — 2025-09-20 — state: Open
-- **safer-rust/safety-tags**: [Fix display error in os-sp.md](https://github.com/safer-rust/safety-tags/pull/61) — 2025-09-16 — state: Merged
-- **safer-rust/safety-tags**: [Add Rust-for-linux SP docs](https://github.com/safer-rust/safety-tags/pull/57) — 2025-08-19 — state: Merged
-- **safer-rust/safety-tags**: [fix error discriptions in std.json, which are already reviewed](https://github.com/safer-rust/safety-tags/pull/38) — 2025-07-27 — state: Merged
-- **safer-rust/safety-tags**: [fix error in std.json](https://github.com/safer-rust/safety-tags/pull/33) — 2025-07-25 — state: Merged
-- **WIZeaz/RAP**: [Add get_trimmed_path() in input.rs ](https://github.com/WIZeaz/RAP/pull/8) — 2025-06-23 — state: Merged
-- **safer-rust/RAPx-Book**: [Update 5.2-api.md](https://github.com/safer-rust/RAPx-Book/pull/9) — 2025-04-28 — state: Merged
-- **WIZeaz/RAP**: [delete redundant member in api_dependency graph](https://github.com/WIZeaz/RAP/pull/7) — 2025-04-27 — state: Merged
-- **WIZeaz/RAP**: [delete reduntant member in api_graph, realize main content in RULF](https://github.com/WIZeaz/RAP/pull/6) — 2025-04-27 — state: Closed
-- **WIZeaz/RAP**: [add Ref and mut Ref edge in Rulf and max_coverage(), improve coverage](https://github.com/WIZeaz/RAP/pull/5) — 2025-04-26 — state: Closed
-- **WIZeaz/RAP**: [set max_coverage() as an independent api, not rely on rulf](https://github.com/WIZeaz/RAP/pull/4) — 2025-04-22 — state: Merged
-- **WIZeaz/RAP**: [Add Feature and fix bug](https://github.com/WIZeaz/RAP/pull/3) — 2025-04-20 — state: Merged
-- **WIZeaz/RAP**: [set api_graph Configurable, but need to improve by adding environment variable and add rulf_algorithm.rs](https://github.com/WIZeaz/RAP/pull/2) — 2025-04-08 — state: Merged
-- **WIZeaz/RAP**: [Testgen](https://github.com/WIZeaz/RAP/pull/1) — 2025-04-08 — state: Closed
-- **yilin0518/Python**: [复习到元组](https://github.com/yilin0518/Python/pull/1) — 2023-12-11 — state: Merged
 <!-- PR-LIST:END -->
 
 ## Kernel patches (via email)
