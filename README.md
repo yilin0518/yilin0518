@@ -58,10 +58,6 @@ I have opened some issues and PRs in many Rust crate repositories:
 <!-- PR-LIST:START -->
 - **rust-lang/rust**: [Clarify safety requirements for SIMD shl/shr and masked load/store](https://github.com/rust-lang/rust/pull/159402) — 2026-07-17 — state: Merged
 - **rust-lang/rust**: [Fix safety doc in intrinsics::simd](https://github.com/rust-lang/rust/pull/159322) — 2026-07-16 — state: Merged
-- **rust-for-linux**: [rust: configfs: fix release safety documentation](https://lore.kernel.org/all/tencent_9FAFC60382D724C608F0F6BFABFC63BB6707@qq.com/) — 2026-07-08 — state: Merged
-- **rust-for-linux**: [rust: miscdevice: fix write_iter safety docs](https://git.kernel.org/pub/scm/linux/kernel/git/gregkh/char-misc.git/commit/?h=char-misc-testing&id=4b17dfb3e22fdccf74839d2fc52362ddc257024e) — 2026-07-07 — state: Merged
-- **rust-for-linux**: [rust: io: fix Mmio::from_raw safety docs](https://lore.kernel.org/all/tencent_2E90E794C61B02A9A4BB88BD76B02B976307@qq.com/) — 2026-07-07 — state: Open
-- **rust-for-linux**: [rust: drm: fix GEM object pointer safety docs](https://lore.kernel.org/all/alUFzVNxNHlmZbMJ@google.com/) — 2026-07-07 — state: Merged
 - **rust-lang/rust**: [Clarify as_uninit_mut may point to uninitialized memory](https://github.com/rust-lang/rust/pull/158804) — 2026-07-05 — state: Merged
 - **rust-lang/stdarch**: [Add align requirement in _mm_stream_si32 and _mm_stream_si64](https://github.com/rust-lang/stdarch/pull/2183) — 2026-07-07 — state: Merged 
 - **rust-lang/rust**: [Add supplementary information for get_unchecked(mut)](https://github.com/rust-lang/rust/pull/158810) — 2026-07-05 — state: Merged
@@ -78,8 +74,14 @@ I have opened some issues and PRs in many Rust crate repositories:
 - **libpnet/libpnet**: [pnet_sys: change visibility of FileDesc.fd from public to private](https://github.com/libpnet/libpnet/pull/768) — 2026-05-26 — state: Open
 - **alloy-rs/nybbles**: [change debug_assert!() to assert!() in Nibbles::len()](https://github.com/alloy-rs/nybbles/pull/57) — 2026-05-26 — state: Closed
 - **rust-lang/rust**: [rustdoc: Prototype implement RFC 3842 with safety::requires attribute](https://github.com/rust-lang/rust/pull/155201) — 2026-04-12 — state: Open
+- **DragonOS-Community/DragonOS**: [Add assert in ring_buffer.rs](https://github.com/DragonOS-Community/DragonOS/pull/1537) — 2025-12-22 — state: Closed
+<!-- PR-LIST:END -->
+
+## Kernel patches (via email)
+- **rust-for-linux**: [rust: configfs: fix release safety documentation](https://lore.kernel.org/all/tencent_9FAFC60382D724C608F0F6BFABFC63BB6707@qq.com/) — 2026-07-08 — state: Merged
+- **rust-for-linux**: [rust: miscdevice: fix write_iter safety docs](https://git.kernel.org/pub/scm/linux/kernel/git/gregkh/char-misc.git/commit/?h=char-misc-testing&id=4b17dfb3e22fdccf74839d2fc52362ddc257024e) — 2026-07-07 — state: Merged
+- **rust-for-linux**: [rust: io: fix Mmio::from_raw safety docs](https://lore.kernel.org/all/tencent_2E90E794C61B02A9A4BB88BD76B02B976307@qq.com/) — 2026-07-07 — state: Open
+- **rust-for-linux**: [rust: drm: fix GEM object pointer safety docs](https://lore.kernel.org/all/alUFzVNxNHlmZbMJ@google.com/) — 2026-07-07 — state: Merged
 - **rust-for-linux** [Re: [PATCH v2] rust: dma: remove incorrect safety documentation](https://lore.kernel.org/all/DFARBS5X3XAV.304WNUYV2ES3Q@kernel.org/#r) — state: Merged
 - **rust-for-linux** [Re: [PATCH v2] rust: device_id: replace incorrect word in safety documentation](https://lore.kernel.org/all/DFARBV6C1ITF.32UCXF6AYE2A8@kernel.org/) — state: Merged
 - **rust-for-linux** [Re: [PATCH v3 RESEND] rust: cpumask: rename methods of Cpumask for clarity and consistency](https://lore.kernel.org/all/aWS9yf1iwWW-O0y6@google.com/) — state: Merged
-- **DragonOS-Community/DragonOS**: [Add assert in ring_buffer.rs](https://github.com/DragonOS-Community/DragonOS/pull/1537) — 2025-12-22 — state: Closed
-<!-- PR-LIST:END -->
