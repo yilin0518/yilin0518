@@ -74,7 +74,7 @@ I have opened some issues and PRs in many Rust crate repositories:
 - **rustsec/advisory-db**: [Add advisory for loom: Lazy::get can return a dangling &'static reference](https://github.com/rustsec/advisory-db/pull/2920) — 2026-05-28 — state: Closed
 - **rustsec/advisory-db**: [Add advisory for bytes-str: BytesString::split_off can break UTF-8 invariant](https://github.com/rustsec/advisory-db/pull/2919) — 2026-05-28 — state: Closed
 - **tokio-rs/loom**: [Fix #406](https://github.com/tokio-rs/loom/pull/410) — 2026-05-28 — state: Open
-- **anza-xyz/solana-sdk**: [stable-layout: change fields visibility of StableVec<T> from public to private](https://github.com/anza-xyz/solana-sdk/pull/740) — 2026-05-26 — state: Open
+- **anza-xyz/solana-sdk**: [stable-layout: change fields visibility of StableVec<T> from public to private](https://github.com/anza-xyz/solana-sdk/pull/740) — 2026-05-26 — state: Merged
 - **libpnet/libpnet**: [pnet_sys: change visibility of FileDesc.fd from public to private](https://github.com/libpnet/libpnet/pull/768) — 2026-05-26 — state: Open
 - **alloy-rs/nybbles**: [change debug_assert!() to assert!() in Nibbles::len()](https://github.com/alloy-rs/nybbles/pull/57) — 2026-05-26 — state: Closed
 - **rust-lang/rust**: [rustdoc: Prototype implement RFC 3842 with safety::requires attribute](https://github.com/rust-lang/rust/pull/155201) — 2026-04-12 — state: Open
