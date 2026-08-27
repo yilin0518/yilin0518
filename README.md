@@ -75,7 +75,6 @@ I have opened some issues and PRs in many Rust crate repositories:
 - **rust-lang/stdarch**: [Add align requirement in _mm_stream_si32 and _mm_stream_si64](https://github.com/rust-lang/stdarch/pull/2183) — 2026-07-07 — state: Merged
 - **rust-lang/rust**: [Add alignment requirements for _mm_stream_si32 and _mm_stream_si64](https://github.com/rust-lang/rust/pull/158892) — 2026-07-07 — state: Closed
 - **rust-lang/rust**: [Add supplementary information for get_unchecked(mut)](https://github.com/rust-lang/rust/pull/158810) — 2026-07-05 — state: Merged
-- **safer-rust/rust**: [Make `get_unchecked(_mut)` docs consistent](https://github.com/safer-rust/rust/pull/9) — 2026-07-05 — state: Closed
 - **rust-lang/rust**: [Clarify `as_uninit_mut` may point to uninitialized memory](https://github.com/rust-lang/rust/pull/158804) — 2026-07-05 — state: Merged
 - **rust-lang/rust**: [Fix inconsistent safety requirement in VecDeque::nonoverlapping_ranges](https://github.com/rust-lang/rust/pull/158433) — 2026-06-26 — state: Merged
 - **rust-lang/rust**: [Add safety section for DisjointBitor::disjoint_bitor](https://github.com/rust-lang/rust/pull/158383) — 2026-06-25 — state: Closed
