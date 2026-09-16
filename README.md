@@ -7,7 +7,8 @@ I'm active in Rust Community, mainly in Zulip. My open talks are here:
 - [How CStr::from_bytes_with_nul_unchecked  deal with nul?](https://rust-lang.zulipchat.com/#narrow/channel/219381-t-libs/topic/How.20CStr.3A.3Afrom_bytes_with_nul_unchecked.20.20deal.20with.20nul.3F/with/532919235)
 - [Review about the safety comment related to List::remove](https://rust-lang.zulipchat.com/#narrow/channel/425075-rust-for-linux/topic/Review.20about.20the.20safety.20comment.20related.20to.20List.3A.3Aremove/with/568259521  )
 - [Maybe some safety doc need fixs in intrinsics::simd](https://rust-lang.zulipchat.com/#narrow/channel/131828-t-compiler/topic/Maybe.20some.20safety.20doc.20need.20fixs.20in.20intrinsics.3A.3Asimd)
-
+- [Should add Data: Send/Sync bounds in configfs::Subsystem?](https://rust-for-linux.zulipchat.com/#narrow/channel/288089-General/topic/Should.20add.20Data.3A.20Send.2FSync.20bounds.20in.20configfs.3A.3ASubsystem.3F/with/623719979)
+- [Should `impl_has_list_links_self_ptr!` add offset_of! macro?](https://rust-for-linux.zulipchat.com/#narrow/channel/288089-General/topic/Should.20.60impl_has_list_links_self_ptr.21.60.20add.20offset_of.21.20macro.3F/with/624615061)
 
 ![Metrics](/github-metrics.svg)
 
