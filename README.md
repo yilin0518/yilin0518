@@ -61,6 +61,9 @@ I have opened some issues and PRs in many Rust crate repositories:
 
 ## Pull Requests
 <!-- PR-LIST:START -->
+- **rust-lang/rust**: [Document safety requirements for intrinsic fallbacks](https://github.com/rust-lang/rust/pull/163141) — 2026-09-22 — state: Open
+- **rust-lang/rust**: [document safety requirements for atomic intrinsics](https://github.com/rust-lang/rust/pull/163140) — 2026-09-22 — state: Open
+- **rust-lang/rust**: [Add safety section for atomic_load/store](https://github.com/rust-lang/rust/pull/162854) — 2026-09-21 — state: Merged
 - **rust-lang/rust**: [Add safety comments in alloc::Wtf8](https://github.com/rust-lang/rust/pull/161292) — 2026-08-18 — state: Merged
 - **rust-lang/rust**: [doc: document safety requirements for core WTF-8](https://github.com/rust-lang/rust/pull/161271) — 2026-08-18 — state: Merged
 - **bevyengine/bevy**: [Bevy_reflect: Use into_remote to replace transmute in ReflectRemote impl](https://github.com/bevyengine/bevy/pull/25351) — 2026-08-10 — state: Merged
@@ -101,3 +104,6 @@ I have opened some issues and PRs in many Rust crate repositories:
 - **rust-for-linux** [Re: [PATCH v2] rust: dma: remove incorrect safety documentation](https://lore.kernel.org/all/DFARBS5X3XAV.304WNUYV2ES3Q@kernel.org/#r) — state: Merged
 - **rust-for-linux** [Re: [PATCH v2] rust: device_id: replace incorrect word in safety documentation](https://lore.kernel.org/all/DFARBV6C1ITF.32UCXF6AYE2A8@kernel.org/) — state: Merged
 - **rust-for-linux** [Re: [PATCH v3 RESEND] rust: cpumask: rename methods of Cpumask for clarity and consistency](https://lore.kernel.org/all/aWS9yf1iwWW-O0y6@google.com/) — state: Merged
+- **rust-for-linux** [[PATCH] rust: bitfield: require Zeroable storage for Zeroable impl](https://lore.kernel.org/all/tencent_AA30574AC78ECFD88D7E042A49371119ED08@qq.com/) — 2026-09-13 state: Open
+- **rust-for-linux** [[PATCH] rust: print: document safety of formatting calls](https://lore.kernel.org/all/tencent_5F3F1A5D096692FC22CADA8FAF888EE39E09@qq.com/) — 2026-09-21 state: Open
+- **rust-for-linux** [[PATCH] rust: list: document safety discharge and add offset_of! check](https://lore.kernel.org/all/tencent_F3A825AD475CB58F5C0D1C833FD3353E130A@qq.com/) — 2026-09-21 state: Open
