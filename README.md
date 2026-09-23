@@ -104,6 +104,6 @@ I have opened some issues and PRs in many Rust crate repositories:
 - **rust-for-linux** [Re: [PATCH v2] rust: dma: remove incorrect safety documentation](https://lore.kernel.org/all/DFARBS5X3XAV.304WNUYV2ES3Q@kernel.org/#r) — state: Merged
 - **rust-for-linux** [Re: [PATCH v2] rust: device_id: replace incorrect word in safety documentation](https://lore.kernel.org/all/DFARBV6C1ITF.32UCXF6AYE2A8@kernel.org/) — state: Merged
 - **rust-for-linux** [Re: [PATCH v3 RESEND] rust: cpumask: rename methods of Cpumask for clarity and consistency](https://lore.kernel.org/all/aWS9yf1iwWW-O0y6@google.com/) — state: Merged
-- **rust-for-linux** [[PATCH] rust: bitfield: require Zeroable storage for Zeroable impl](https://lore.kernel.org/all/tencent_AA30574AC78ECFD88D7E042A49371119ED08@qq.com/) — 2026-09-13 state: Open
+- **rust-for-linux** [[PATCH] rust: bitfield: require Zeroable storage for Zeroable impl](https://lore.kernel.org/all/tencent_AA30574AC78ECFD88D7E042A49371119ED08@qq.com/) — 2026-09-13 state: Merged
 - **rust-for-linux** [[PATCH] rust: print: document safety of formatting calls](https://lore.kernel.org/all/tencent_5F3F1A5D096692FC22CADA8FAF888EE39E09@qq.com/) — 2026-09-21 state: Open
 - **rust-for-linux** [[PATCH] rust: list: document safety discharge and add offset_of! check](https://lore.kernel.org/all/tencent_F3A825AD475CB58F5C0D1C833FD3353E130A@qq.com/) — 2026-09-21 state: Open
