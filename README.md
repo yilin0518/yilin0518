@@ -61,7 +61,9 @@ I have opened some issues and PRs in many Rust crate repositories:
 
 ## Pull Requests
 <!-- PR-LIST:START -->
-- **rust-lang/rust**: [Document safety requirements for intrinsic fallbacks](https://github.com/rust-lang/rust/pull/163141) — 2026-09-22 — state: Open
+- **rust-lang/rust**: [Add safety comments for alloc::string](https://github.com/rust-lang/rust/pull/163463) — 2026-09-28 — state: Merged
+- **rust-lang/rust**: [Add safety comments for alloc::str](https://github.com/rust-lang/rust/pull/163445) — 2026-09-28 — state: Open
+- **rust-lang/rust**: [Document safety requirements for intrinsic fallbacks](https://github.com/rust-lang/rust/pull/163141) — 2026-09-22 — state: Merged
 - **rust-lang/rust**: [document safety requirements for atomic intrinsics](https://github.com/rust-lang/rust/pull/163140) — 2026-09-22 — state: Open
 - **rust-lang/rust**: [Add safety section for atomic_load/store](https://github.com/rust-lang/rust/pull/162854) — 2026-09-21 — state: Merged
 - **rust-lang/rust**: [Add safety comments in alloc::Wtf8](https://github.com/rust-lang/rust/pull/161292) — 2026-08-18 — state: Merged
@@ -107,3 +109,4 @@ I have opened some issues and PRs in many Rust crate repositories:
 - **rust-for-linux** [[PATCH] rust: bitfield: require Zeroable storage for Zeroable impl](https://lore.kernel.org/all/tencent_AA30574AC78ECFD88D7E042A49371119ED08@qq.com/) — 2026-09-13 state: Merged
 - **rust-for-linux** [[PATCH] rust: print: document safety of formatting calls](https://lore.kernel.org/all/tencent_5F3F1A5D096692FC22CADA8FAF888EE39E09@qq.com/) — 2026-09-21 state: Open
 - **rust-for-linux** [[PATCH] rust: list: document safety discharge and add offset_of! check](https://lore.kernel.org/all/tencent_F3A825AD475CB58F5C0D1C833FD3353E130A@qq.com/) — 2026-09-21 state: Open
+- **rust-for-linux** [[PATCH v2] rust: configfs: require thread-safe callback data](https://lore.kernel.org/all/tencent_5449081195EDDF5726C709CF648DD4044A08@qq.com/) — 2026-09-23 state: Merged
