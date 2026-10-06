@@ -9,6 +9,7 @@ I'm active in Rust Community, mainly in Zulip. My open talks are here:
 - [Maybe some safety doc need fixs in intrinsics::simd](https://rust-lang.zulipchat.com/#narrow/channel/131828-t-compiler/topic/Maybe.20some.20safety.20doc.20need.20fixs.20in.20intrinsics.3A.3Asimd)
 - [Should add Data: Send/Sync bounds in configfs::Subsystem?](https://rust-for-linux.zulipchat.com/#narrow/channel/288089-General/topic/Should.20add.20Data.3A.20Send.2FSync.20bounds.20in.20configfs.3A.3ASubsystem.3F/with/623719979)
 - [Should `impl_has_list_links_self_ptr!` add offset_of! macro?](https://rust-for-linux.zulipchat.com/#narrow/channel/288089-General/topic/Should.20.60impl_has_list_links_self_ptr.21.60.20add.20offset_of.21.20macro.3F/with/624615061)
+- [Safety requirements of ARM hint APIs](https://rust-lang.zulipchat.com/#narrow/channel/219381-t-libs/topic/Safety.20requirements.20of.20ARM.20hint.20APIs/with/629609101)
 
 ![Metrics](/github-metrics.svg)
 
