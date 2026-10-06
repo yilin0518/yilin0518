@@ -62,9 +62,9 @@ I have opened some issues and PRs in many Rust crate repositories:
 ## Pull Requests
 <!-- PR-LIST:START -->
 - **rust-lang/rust**: [Add safety comments for alloc::string](https://github.com/rust-lang/rust/pull/163463) — 2026-09-28 — state: Merged
-- **rust-lang/rust**: [Add safety comments for alloc::str](https://github.com/rust-lang/rust/pull/163445) — 2026-09-28 — state: Open
+- **rust-lang/rust**: [Add safety comments for alloc::str](https://github.com/rust-lang/rust/pull/163445) — 2026-09-28 — state: Merged
 - **rust-lang/rust**: [Document safety requirements for intrinsic fallbacks](https://github.com/rust-lang/rust/pull/163141) — 2026-09-22 — state: Merged
-- **rust-lang/rust**: [document safety requirements for atomic intrinsics](https://github.com/rust-lang/rust/pull/163140) — 2026-09-22 — state: Open
+- **rust-lang/rust**: [document safety requirements for atomic intrinsics](https://github.com/rust-lang/rust/pull/163140) — 2026-09-22 — state: Merged
 - **rust-lang/rust**: [Add safety section for atomic_load/store](https://github.com/rust-lang/rust/pull/162854) — 2026-09-21 — state: Merged
 - **rust-lang/rust**: [Add safety comments in alloc::Wtf8](https://github.com/rust-lang/rust/pull/161292) — 2026-08-18 — state: Merged
 - **rust-lang/rust**: [doc: document safety requirements for core WTF-8](https://github.com/rust-lang/rust/pull/161271) — 2026-08-18 — state: Merged
