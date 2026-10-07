@@ -62,6 +62,9 @@ I have opened some issues and PRs in many Rust crate repositories:
 
 ## Pull Requests
 <!-- PR-LIST:START -->
+- **rust-lang/rust**: [Remove ignore-unsafe tidy check in alloc/linklist](https://github.com/rust-lang/rust/pull/163952) — 2026-10-7 — state: Open
+- **rust-lang/stdarch**: [Add safety doc for aarch64/mte](https://github.com/rust-lang/stdarch/pull/2243) — 2026-10-7 — state: Open
+- **rust-lang/stdarch**: [remove redundant unsafe](https://github.com/rust-lang/stdarch/pull/2241) — 2026-10-7 — state: Open
 - **rust-lang/rust**: [Add safety comments for alloc::string](https://github.com/rust-lang/rust/pull/163463) — 2026-09-28 — state: Merged
 - **rust-lang/rust**: [Add safety comments for alloc::str](https://github.com/rust-lang/rust/pull/163445) — 2026-09-28 — state: Merged
 - **rust-lang/rust**: [Document safety requirements for intrinsic fallbacks](https://github.com/rust-lang/rust/pull/163141) — 2026-09-22 — state: Merged
