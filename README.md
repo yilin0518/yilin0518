@@ -62,6 +62,8 @@ I have opened some issues and PRs in many Rust crate repositories:
 
 ## Pull Requests
 <!-- PR-LIST:START -->
+- **rust-lang/rust**: [remove redundant unsafe](https://github.com/rust-lang/rust/pull/163918) — 2026-10-7 — state: Merged
+- **rust-lang/rust**: [make the safety documentation consistent in task::LocalWaker](https://github.com/rust-lang/rust/pull/164213) — 2026-10-12 — state: Merged
 - **rust-lang/rust**: [Remove ignore-unsafe tidy check in alloc/linklist](https://github.com/rust-lang/rust/pull/163952) — 2026-10-7 — state: Open
 - **rust-lang/stdarch**: [Add safety doc for aarch64/mte](https://github.com/rust-lang/stdarch/pull/2243) — 2026-10-7 — state: Open
 - **rust-lang/stdarch**: [remove redundant unsafe](https://github.com/rust-lang/stdarch/pull/2241) — 2026-10-7 — state: Closed
