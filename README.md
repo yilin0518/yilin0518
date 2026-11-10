@@ -11,6 +11,7 @@ I'm active in Rust Community, mainly in Zulip. My open talks are here:
 - [Should `impl_has_list_links_self_ptr!` add offset_of! macro?](https://rust-for-linux.zulipchat.com/#narrow/channel/288089-General/topic/Should.20.60impl_has_list_links_self_ptr.21.60.20add.20offset_of.21.20macro.3F/with/624615061)
 - [Safety requirements of ARM hint APIs](https://rust-lang.zulipchat.com/#narrow/channel/219381-t-libs/topic/Safety.20requirements.20of.20ARM.20hint.20APIs/with/629609101)
 - [Add particular remind for internal API](https://rust-lang.zulipchat.com/#narrow/channel/219381-t-libs/topic/Add.20particular.20remind.20for.20internal.20API/with/627800049)
+- [Soundness issue about Pattern and Search](https://rust-lang.zulipchat.com/#narrow/channel/219381-t-libs/topic/Soundness.20issue.20about.20Pattern.20and.20Search/with/638725746)
 
 ![Metrics](/github-metrics.svg)
 
@@ -63,9 +64,14 @@ I have opened some issues and PRs in many Rust crate repositories:
 
 ## Pull Requests
 <!-- PR-LIST:START -->
+- **rust-lang/rust**: [Add safety requirements for Pattern and Searcher](https://github.com/rust-lang/rust/pull/165681) — 2026-11-10 — state: Open 
+- **rust-lang/rust**: [Add safety requirements for get_unchecked(_mut) in SliceIndex](https://github.com/rust-lang/rust/pull/165737) — 2026-11-10 — state: Open 
+- **rust-lang/rust**: [make the safety documentation consistent in Ptr module](https://github.com/rust-lang/rust/pull/164241) — 2026-10-13 — state: Merged
+- **rust-lang/rust**: [Add safety section for from_utf8_unchecked/from_raw_parts](https://github.com/rust-lang/rust/pull/165019) — 2026-10-27 — state: Merged
+- **rust-lang/rust**: [Follow up PR of distinguish experimental/internal features in rustdoc](https://github.com/rust-lang/rust/pull/165017) — 2026-10-27 — state: Open
 - **rust-lang/rust**: [remove redundant unsafe](https://github.com/rust-lang/rust/pull/163918) — 2026-10-7 — state: Merged
 - **rust-lang/rust**: [make the safety documentation consistent in task::LocalWaker](https://github.com/rust-lang/rust/pull/164213) — 2026-10-12 — state: Merged
-- **rust-lang/rust**: [Remove ignore-unsafe tidy check in alloc/linklist](https://github.com/rust-lang/rust/pull/163952) — 2026-10-7 — state: Open
+- **rust-lang/rust**: [Remove ignore-unsafe tidy check in alloc/linklist](https://github.com/rust-lang/rust/pull/163952) — 2026-10-7 — state: Merged
 - **rust-lang/stdarch**: [Add safety doc for aarch64/mte](https://github.com/rust-lang/stdarch/pull/2243) — 2026-10-7 — state: Open
 - **rust-lang/stdarch**: [remove redundant unsafe](https://github.com/rust-lang/stdarch/pull/2241) — 2026-10-7 — state: Closed
 - **rust-lang/rust**: [Add safety comments for alloc::string](https://github.com/rust-lang/rust/pull/163463) — 2026-09-28 — state: Merged
